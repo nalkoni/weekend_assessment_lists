@@ -54,7 +54,7 @@ def is_berry(fruit):
 #        == True``, and `5` if ``is_berry() == False``.
 
 
-def shipping_cost(fruits):
+def shipping_cost(fruit):
     """
     Returns shipping_cost based on inputed fruit
 
@@ -62,7 +62,7 @@ def shipping_cost(fruits):
     calling the function. I can write it to do it without calling function
 
     """
-    if is_berry() == 'True':
+    if is_berry(fruit):
         shipping_cost = 0
     else:
         shipping_cost = 5
@@ -104,7 +104,7 @@ def full_name(first_name, last_name):
 
 
 def hometown_greeting(hometown, first_name, last_name):
-    if is_hometown(hometown) == 'True':
+    if is_hometown(hometown):
         greeting = "Hi %s, we're from the same place!" % full_name(first_name, last_name)
     else:
         greeting = "Hi %s, where are you from?" % full_name(first_name, last_name)
