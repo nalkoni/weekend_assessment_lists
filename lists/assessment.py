@@ -18,9 +18,11 @@ def all_odd(numbers):
     """
 
     odd_lst = []
+
     for number in numbers:
         if number % 2 != 0:
             odd_lst.append(number)
+    
     return odd_lst
 
 
@@ -75,8 +77,8 @@ def foods_in_common(foods1, foods2):
 
     """
     foods_in_common = []
-    for food in foods1 and foods2:
-        if food in foods1 and food in foods2:
+    for food in foods2: 
+        if food in foods1:
             foods_in_common.append(food)
     return foods_in_common
 
@@ -123,11 +125,11 @@ def largest_n_items(items, n):
     new_max_list = []
     if n == 0:
         return new_max_list
-    else:
-        for x in range(0, n):
-            max_numbers = max(items)
-            new_max_list.append(max_numbers)
-            items.remove(max_numbers)
+  
+    for x in range(0, n):
+        max_numbers = max(items)
+        new_max_list.append(max_numbers)
+        items.remove(max_numbers)
 
     return sorted(new_max_list)
 

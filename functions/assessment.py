@@ -104,6 +104,10 @@ def full_name(first_name, last_name):
 
 
 def hometown_greeting(hometown, first_name, last_name):
+    """
+    Returns a greeting based on the input
+
+    """
     if is_hometown(hometown):
         greeting = "Hi %s, we're from the same place!" % full_name(first_name, last_name)
     else:
@@ -117,6 +121,20 @@ def hometown_greeting(hometown, first_name, last_name):
 # 1. Write a function ``increment()`` with a nested inner function, ``add()``
 #    inside of it. The outer function should take ``x``, an integer which
 #    defaults to 1. The inner function should take ``y`` and add ``x`` and ``y`` together.
+
+
+def increment(x):
+    """
+    Returns
+
+    """
+
+    def add(y):
+        x = 1
+        add = x + y
+    return add
+
+
 
 # 2. Call the function ``increment()`` with x = 5. Assign what is returned to a variable name, addfive. Call
 #    addfive with y = 5. Call again with y = 20.
