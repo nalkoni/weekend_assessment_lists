@@ -1,0 +1,12 @@
+input, textarea, select {
+    background-color: #FFF9C0;
+}
+
+#lastname {
+    font-weight: bold; 
+}
+
+p {
+    border-style: dotted;
+    border-width: 2px;
+}
