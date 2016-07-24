@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Job Application{% endblock %}
+
+{% block content %}
+    <h1>Job Application Form</h1>
+      <p>Please complete the form below to apply for a position with us. Applications will remain active for one month.</p><br>
+      <form action="/application" method="POST">
+        <label for="firstname">First Name:
+          <input type="text" name="firstnameinput" id="firstname">
+        </label><br><br>
+        <label for="lastname">Last Name:
+          <input type="text" name="lastnameinput" id="lastname">
+        </label><br><br>
+        <label for="salaryrequirement">Salary Reqirement:
+          <input type="text" name="salaryrequirementinput" id="salaryrequirement">
+        </label><br><br>
+        <label for="position">Please select which position you are interested in:  
+          <select id="position" name="positionselection">
+            <option value=""></option>
+            <option value="software engineer">Software Engineer</option>
+            <option value="qa engineer">QA Engineer</option>
+            <option value="product manager">Product Manager</option>
+          </select><br><br><br>
+        </label>
+        <label><input type="submit" value="submit"></label>
+    
+    </form>
+{% endblock %}
