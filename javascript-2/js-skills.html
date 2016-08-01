@@ -211,22 +211,6 @@
 
   document.getElementById("reverse-string-button").addEventListener('click', reverseMsg);
 
-//  Here's a stub of a function you can use!
-
-//  function reverseString() {
-//    var msg = "Porcupines are cute";
-//
-//    // do some stuff here to reverse that string into a new variable
-//    var newMsg = "This should be the reversed string";
-//
-//    alert(newMsg);
-//  }
-
-// Here's a stub of event stuff you could use
-//
-
-//  var button = document.getElementById('reverse-string-button');
-//  button.addEventListener('click', reverseString);
 </script>
 
 
@@ -251,7 +235,13 @@
 
 <script>
   "use strict";
-  // code here for above problem
+
+  function popUpButton(evt) {
+  alert("Pop-up!");
+  }
+
+  $('.tricky-to-find').click(popUpButton);
+
 </script>
 
 <div class="hint">
