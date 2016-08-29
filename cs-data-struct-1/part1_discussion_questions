@@ -1,0 +1,77 @@
+Part 1: Discussion Questions
+Runtime
+	1	When calculating the Big O notation for a particular algorithm, it’s necessary to consider the length of time it takes for the algorithm to run as the algorithm’s workload approaches infinity. You can think of the workload as the number of tasks required to complete a job. What determines the workload of figuring out whether your box of animal crackers contains an elephant?
+	- O(n)
+
+	2	Order the following runtimes in ascending order by efficiency as n approaches infinity:
+	• 	O(1) - Constant 
+	•	O(log n) - Logarithmic
+	•	O(n) - Linear 
+	•	O(n log n) - Logarithmic
+	•	O(n2) - Quadratic
+	•	O(2n) - Exponential 
+
+
+Stacks and Queues
+	1	In the following cases, would a stack or queue be a more appropriate data structure?
+	1	The process of loading and unloading pallets onto a flatbed truck 
+			- A stack
+	2	Putting bottle caps on bottles of beer as they roll down an assembly line
+			- A queue
+	3	Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2)
+			- A stack, because theres an order to the operations, not 		worked left to right 
+	2	Describe two more situations where a queue would be an appropriate data structure.
+				- When a website is serving information, it does it 			in the order of the requests the came in FIFO
+				- Having a system for food orders 
+	3	Describe two more situations where a stack would be an appropriate data structure. 
+				- Undo Button 
+				- Packing a moving truck
+
+Linked Lists
+	1	Given the linked list below, which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+		The box with the “Apple” and the next, “Berry” & Next, “Cherry” and Next are the Nodes. They are made up of the Data(the information the node contains, cant be string, int, instance) and the Next Attribute, which references the next node. 
+		The Head is the Apple Node (the reference to the first Node)
+		There is no specified tail in this linked list, but if there were it would be Cherry. 
+
+
+
+	2	What’s the difference between doubly- and singly-linked lists?
+			The doubly linked list in addition to the Data attribute and the next attribute it has a previous attribute. 
+	3	Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+			If we keep track of the tail it allows the computer to know where the end of the linked list is making it so that we wouldn’t need to iterate through to find the end. 
+
+Trees
+
+	1	Given the tree above, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burrito (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+			to_visit= [food]
+			to_visit= [italian, indian, mexican]
+			to_visit= [indian, mexican, lasagna, pizza]
+			to_visit= [indian, mexican, lasagna, pizza]
+			to_visit= [mexican, lasagna, pizza, tikka masala, saag]
+			to_visit= [lasagna, pizza, tikka masala, saag, burrito, tacos, enchiladas]
+			to_visit= [pizza, tikka masala, saag, burrito, tacos, enchiladas]
+			to_visit= [tikka masala, saag, burrito, tacos, enchiladas, thin crust, chicago- style, new, york style, sicilian]
+			to_visit= [saag, burrito, tacos, enchiladas, thin crust, chicago- style, new, york style, sicilian, ]
+			to_visit= [ burrito, tacos, enchiladas, thin crust, chicago- style, new, york style, sicilian, ]
+			Found burrito
+	
+			
+
+	2	Given the tree above, in what order would a Depth First Search (DFS) algorithm visit each node until finding Chicago-style (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+			to_visit= [food]
+			to_visit= [food, Italian, indian, Mexican]
+			to_visit= [food, Italian, indian, burrito, tacos, enchiladas]
+			to_visit= [food, Italian, indian, burrito, tacos]
+			to_visit= [food, Italian, indian, burrito]
+			to_visit= [food, Italian, tikka masala, saag]
+			to_visit= [food, Italian, tikka masala]
+			to_visit= [food, Italian, lasagna, pizza]
+			to_visit= [food, Italian, lasagna, thin crust, chicago-style, new york-style, sicilian]
+			to_visit= [food, Italian, lasagna, thin crust, chicago-style, new york-style]
+			to_visit= [food, Italian, lasagna, thin crust, chicago-style]
+			Found Chicago-style
+
+	3	How is a binary search tree different from other trees?
+			There are two nodes
+			Each Node has a left and right child
+			There is a rule of arrangement i.e alphabetical, allows for fast searching 
