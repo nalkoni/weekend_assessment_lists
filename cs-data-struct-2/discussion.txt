@@ -1,0 +1,88 @@
+Recursion
+
+In your own words, what is Recursion?
+- Simply when a function calls itself. It completes the function by nesting within it self.
+
+Why is it necessary to have a Base Case?
+- The smallest piece of work that you can do. The base case makes it so you go to the base level of the problem and then start going up the recursive chain. It could happen that without a base case you don't get out of the recursive chain.
+
+
+
+Graphs 
+
+What is a Graph?
+- A data structure used to show nodes and the relationships that exist between the nodes.
+
+How is a Graph different from a Tree?
+- Trees are a specific type of graph. Trees do not have cycles. Trees have a set structure that has a one direction flow between the parent-child relationship. 
+
+Give an example of somthing that would be good to model with a Graph.
+- Facebook/Linkedin Friends.
+
+
+
+
+
+Performance of Different Data Structures
+
+Fill in the runtimes for the following actions for the table below:
+
+Data Structure                       Index   Search  Add-R   Add-L   Pop-L   Pop-R
+
+Python List (Array)                  O(1)    O(n)    O(1)     O(n)    O(n)    O(1)
+
+Linked List                          O(n)    O(n)    O(1)     O(1)    O(1)    O(n)
+
+Doubly-Linked List                   O(n)    O(n)    O(1)     O(1)    O(1)    O(1)
+
+Queue (as Array)                                     O(1)             O(n)     
+
+Queue (as LL or DLL)                                 O(1)            O(1)     
+
+Stack (as Array, LL, or DLL)                         O(1)                    O(1)
+
+Deque (as DLL)                                       O(1)     O(1)    O(1)    O(1)
+
+
+  
+
+
+
+Fill in Runtime and Memory:
+
+The answers for Dictionary have been provided; you should fill in the rest:
+
+Data Structure           Get    Add    Delete  Iterate   Memory
+
+Dictionary (Hash Map)   O(1)    O(1)    O(1)    O(n)     MEDIUM
+
+Set (Hash Map)          O(1)    O(1)    O(1)    O(n)     MEDIUM
+
+Binary Search Tree      O(logn) O(logn) O(logn) O(1)     MEDIUM
+
+Tree                    O(n)    O(n)    O(n)    O(1)     LOW
+
+
+
+
+
+Sorting
+
+Describe in words how the Bubble Sort algorithm works.
+- The bubble sort takes in a list first it loops through a list of the len of the list minus 2. Then it does the same thing again to get the indexes that will allow it to go through list and check the pair of numbers and switch them accordingly until the list is sorrted.
+
+Describe in words how the Merge Sort algorithm works.
+- Merge sort uses recursion inorder to combine and sort two lists. It first splits a list into 2 smaller lists, until the list size is n=1. The it reverses and starts to merge them together until there is one completed list. 
+
+Describe in words how the Quick Sort algorithm works.
+- Operates on the idea of a partition. There is a ‘pivot’ number that is randomly selected. Then the numbers are sorted around that pivot number. and we can move all the numbers lower than the pivot number to the beginning of the list and move all the numbers bigger than the pivot to the right of the pivot number. 
+
+
+
+Git Branching
+
+Give an instance when you would use git branching.
+- If you are experimenting with a segment of your project or working on it it is best practive to do a branch that way you don't effect the working segment.
+
+What is a pull request?
+- A pulll request is a way to let other programmers know that you want to submit changes to their code. The person or persons in charge of te project will review your changes and decide to accept, request you look further or make changes, or reject it. 
